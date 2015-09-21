@@ -14,7 +14,9 @@ How to make the joystick
 4.Add the child to the scene
 
     joystick = Joystick()
-    joystick.position = CGPointMake(joystick.size.width * 2, joystick.size.height * 2)
+    joystick.zPosition = 3.0
+    joystick.position = CGPointMake(joystick.backdropNode.size.width / 2, joystick.backdropNode.size.height / 2)
+    joystick.shouldFadeOut = true
     self.addChild(joystick)
 
 Movement
